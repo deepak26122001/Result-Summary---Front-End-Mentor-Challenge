@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 248, 248);
+}
+
+.card{
+    box-shadow:rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: 2rem;
+    background-color: aliceblue;
+    width: 650px
+    
+    
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+.result{
+    width: 50%;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(to bottom, rgb(64, 0, 168),rgb(13, 0, 255));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.result .title{
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+.result .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(115, 0, 255), rgb(24, 24, 255));
+    
+}
+.circle h1{
+    color: aliceblue;
+    font-size: 4rem;
+}
+.circle p{
+    color: aliceblue;
+}
+.result b{
+    color: aliceblue;
+    margin-top: 1rem;
+
+    font-size:  1.5rem;
+}
+.result .info{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    mwidth: 200px;
+    align-items: center;
+
+}
+.summary{
+    width: 50%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.rows{
+    flex-direction: column;
+    display: flex;
+    gap: 0.8rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+}
+.row:nth-child(1){
+    background-color: hsla(0, 100%, 67%, .2)
+    
+}
+.row:nth-child(2){
+    background-color: hsla(54, 100%, 50%, 0.2);
+}
+.row:nth-child(3){
+    background-color: hsla(117, 100%, 35%, 0.2);
+}
+.row:nth-child(4){
+    background-color: hsla(255, 100%, 50%, 0.2);
+}
+.btn{
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    border: none;
+    background: linear-gradient(to bottom, rgb(132, 0, 255), blue);
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+@media screen and (max-width:650px){
+    body{
+        align-items: flex-start;
+        background-color: aliceblue;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .result .info{
+        width: 250px;
+    }
+    .summary{
+        width: 100%;
+    }
+    .card{
+        box-shadow: none;
+    }
+    .result{
+        width: 100%;
+    }
+    .result{
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+    }
+}
+    
